@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Usuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Usuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre" type="xs:string"/>
+              <xs:element name="Apellido" type="xs:string"/>              
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="Analisis">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Entrada">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="IDPaciente" type="xs:string"/>
+                    <xs:element name="NumeroFoto" type="xs:string"/>
+                    <xs:element name="Imagen" type="xs:string"/>
+                    <xs:element name="NumeroParasitos" type="xs:integer"/>
+					<xs:element name="Malaria" type="xs:string"/>
+                    <xs:element name="Fecha" type="xs:dateTime"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
