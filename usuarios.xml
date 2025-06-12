@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sistema>
+   <Usuarios>
+      <Usuario>
+         <IDdoctor>L2004</IDdoctor>
+         <Especialista>Infecciones</Especialista>
+      </Usuario>
+      <Usuario>
+         <IDdoctor>N2001</IDdoctor>
+         <Especialista>Vacunas</Especialista>
+      </Usuario>
+      <Usuario>
+         <IDdoctor>E1995</IDdoctor>
+         <Especialista>Pediatria</Especialista>
+      </Usuario>
+   </Usuarios>
+
+   <Analisis>
+      <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>01</NumeroFoto>
+         <Imagen>0001_Foto_01.png</Imagen>
+         <NumeroParasitos>64</NumeroParasitos>
+         <Malaria>Si</Malaria>
+         <Fecha>2024-08-16 12:48:37</Fecha>
+      </Entrada>
+      <Entrada>
+         <IDPaciente>218</IDPaciente>
+         <NumeroFoto>01</NumeroFoto>
+         <Imagen>218_Foto_01.png</Imagen>
+         <NumeroParasitos>24</NumeroParasitos>
+         <Malaria>Si</Malaria>
+         <Fecha>2025-05-16 08:48:24</Fecha>
+      </Entrada>
+      <Entrada>
+         <IDPaciente>453</IDPaciente>
+         <NumeroFoto>07</NumeroFoto>
+         <Imagen>453_Foto_07.png</Imagen>
+         <NumeroParasitos>0</NumeroParasitos>
+         <Malaria>No</Malaria>
+         <Fecha>2025-04-04 15:48:57</Fecha>
+      </Entrada>
+      <Entrada>
+         <IDPaciente>862</IDPaciente>
+         <NumeroFoto>05</NumeroFoto>
+         <Imagen>862_Foto_05.png</Imagen>
+         <NumeroParasitos>08</NumeroParasitos>
+         <Malaria>Si</Malaria>
+         <Fecha>2025-02-18 18:32:24</Fecha>
+      </Entrada>
+      <Entrada>
+         <IDPaciente>369</IDPaciente>
+         <NumeroFoto>09</NumeroFoto>
+         <Imagen>369_Foto_09.png</Imagen>
+         <NumeroParasitos>0</NumeroParasitos>
+         <Malaria>No</Malaria>
+         <Fecha>2025-03-07 12:12:13</Fecha>
+      </Entrada>
+   </Analisis>
+</Sistema>
