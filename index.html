@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visualización XML con XSL</title>
+</head>
+<body>
+
+		<header class="header">
+		  <div class="container header-container">
+			<h1 class="logo">MalariaBF</h1>
+
+			<!-- Contenedor de navegación agrupado -->
+			<div class="nav-group">		  
+			  <div class="login-container">
+				<a href="Inicio.html" class="volver-btn">volver</a>
+			  </div>
+			</div>
+
+		  </div>
+		</header>
+
+  <div id="contenido"></div>
+
+  <script>
+    async function cargarXMLyXSL() {
+      try {
+        const xml = await (await fetch("usuarios.xml")).text();
+        const xsl = await (await fetch("usuarios.xslt")).text();
+
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xml, "application/xml");
+        const xslDoc = parser.parseFromString(xsl, "application/xml");
+
+        const processor = new XSLTProcessor();
+        processor.importStylesheet(xslDoc);
+
+        const result = processor.transformToFragment(xmlDoc, document);
+        document.getElementById("contenido").appendChild(result);
+      } catch (e) {
+        console.error("Error:", e);
+        document.getElementById("contenido").textContent = "No se pudo cargar el contenido.";
+      }
+    }
+
+    cargarXMLyXSL();
+  </script>
+  <!-- Footer -->
+	
+	<section class="footer-info">
+	  <div class="container">
+		<div class="row align-items-center">
+		  <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+			<p><strong>MalariaBF</strong> &copy; 2025 — Todos los derechos reservados.<br>
+			  Teléfono: <a href="tel:+34943888666">943 888 666</a> | Correo: <a href="mailto:IA4Malaria@gmail.com">IA4Malaria@gmail.com</a>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+</body>
+</html>
