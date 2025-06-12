@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Usuarios>
+   <Usuario>
+      <Nombre>Janire</Nombre>
+      <Apellido>Barranco</Apellido>
+      
+   </Usuario>
+   <Analisis>
+      <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>01</NumeroFoto>
+         <Imagen>001_Foto_01.png</Imagen>
+         <NumeroParasitos>64</NumeroParasitos>
+		 <Malaria>Si</Malaria>
+         <Fecha>2025-05-16 08:48:37</Fecha>
+      </Entrada>
+	  <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>02</NumeroFoto>
+         <Imagen>001_Foto_02.png</Imagen>
+         <NumeroParasitos>50</NumeroParasitos>
+		 <Malaria>Si</Malaria>
+         <Fecha>2025-05-27 10:25:11</Fecha>
+      </Entrada>
+	  <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>03</NumeroFoto>
+         <Imagen>001_Foto_03.png</Imagen>
+         <NumeroParasitos>35</NumeroParasitos>
+		 <Malaria>Si</Malaria>
+         <Fecha>2025-06-08 12:01:54</Fecha>
+      </Entrada>
+	  <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>04</NumeroFoto>
+         <Imagen>001_Foto_04.png</Imagen>
+         <NumeroParasitos>18</NumeroParasitos>
+		 <Malaria>Si</Malaria>
+         <Fecha>2025-06-18 08:32:24</Fecha>
+      </Entrada>
+	  <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>05</NumeroFoto>
+         <Imagen>001_Foto_05.png</Imagen>
+         <NumeroParasitos>4</NumeroParasitos>
+		 <Malaria>Si</Malaria>
+         <Fecha>2025-06-28 11:42:43</Fecha>
+      </Entrada>
+	  <Entrada>
+         <IDPaciente>001</IDPaciente>
+         <NumeroFoto>06</NumeroFoto>
+         <Imagen>001_Foto_06.png</Imagen>
+         <NumeroParasitos>0</NumeroParasitos>
+		 <Malaria>No</Malaria>
+         <Fecha>2025-07-04 08:12:59</Fecha>
+      </Entrada>
+   </Analisis>
+</Usuarios>
